@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="454.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.ReportesController">
+  <tabs>
+    <Tab text="PROMEDIO">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="398.0">
+               <children>
+                  <ImageView fitHeight="497.0" fitWidth="472.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icono.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="53.0" layoutY="-3.0" text="RESPUESTAS POR CADA NIVEL">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="39.0" layoutY="88.0" prefHeight="133.0" prefWidth="320.0">
+                     <children>
+                        <HBox prefHeight="37.0" prefWidth="163.0" spacing="30.0">
+                           <children>
+                              <Label text="NIVEL 1">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ganadoNivel1" layoutX="10.0" layoutY="10.0" text="0.4286" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="perdidoNivel1" layoutX="110.0" layoutY="10.0" text="0.5674" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="163.0" spacing="30.0">
+                           <children>
+                              <Label text="NIVEL 2">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ganadoNivel2" layoutX="10.0" layoutY="10.0" text="0.4286" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="perdidoNivel2" layoutX="110.0" layoutY="10.0" text="0.5674" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="49.0" prefHeight="37.0" prefWidth="163.0" spacing="30.0">
+                           <children>
+                              <Label text="NIVEL 3">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ganadoNivel3" layoutX="10.0" layoutY="10.0" text="0.4286" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="perdidoNivel3" layoutX="110.0" layoutY="10.0" text="0.5674" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="88.0" prefHeight="37.0" prefWidth="163.0" spacing="30.0">
+                           <children>
+                              <Label text="NIVEL 4">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ganadoNivel4" layoutX="10.0" layoutY="10.0" text="0.4286" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="perdidoNivel4" layoutX="110.0" layoutY="10.0" text="0.5674" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="127.0" prefHeight="37.0" prefWidth="163.0" spacing="30.0">
+                           <children>
+                              <Label text="NIVEL 5">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="ganadoNivel5" layoutX="10.0" layoutY="10.0" text="0.4286" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="perdidoNivel5" layoutX="110.0" layoutY="10.0" text="0.5674" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label layoutX="46.0" layoutY="58.0" text="NIVEL#" underline="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="165.0" layoutY="58.0" text="GANADO" textFill="#3cbf00" underline="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="58.0" text="PERDIDO" textFill="#f40404" underline="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextFlow layoutX="223.0" layoutY="286.0" prefHeight="172.0" prefWidth="218.0" style="-fx-border-color: #F5FD00; -fx-border-width: 5;">
+                     <children>
+                        <VBox prefHeight="158.0" prefWidth="202.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reporte Respuestas" wrappingWidth="201.7392578125">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El Reporte nos muestra la cantidad de respuestas correctas y incorrectas por cada nivel" textAlignment="CENTER" wrappingWidth="202.12109375">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </TextFlow>
+                  <VBox layoutX="14.0" layoutY="349.0" prefHeight="65.0" prefWidth="156.0">
+                     <children>
+                        <Label prefHeight="13.0" prefWidth="148.0" text="TOTAL TEST">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalTest" alignment="CENTER" prefHeight="17.0" prefWidth="156.0" text="24" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="RESPUESTAS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="398.0">
+               <children>
+                  <ImageView fitHeight="497.0" fitWidth="472.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icono.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="52.0" text="PROMEDIO GLOBAL DEL NIVEL">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextFlow layoutX="212.0" layoutY="274.0" prefHeight="166.0" prefWidth="228.0" style="-fx-border-color: #F5FD00; -fx-border-width: 5;">
+                     <children>
+                        <VBox prefHeight="158.0" prefWidth="202.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reporte Respuestas" wrappingWidth="201.7392578125">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El Reporte nos muestra La cantidad de Preguntas contestadas correctamente y incorrectamente por cada nivel" textAlignment="CENTER" wrappingWidth="202.12109375">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </TextFlow>
+                  <VBox layoutX="14.0" layoutY="349.0" prefHeight="65.0" prefWidth="156.0">
+                     <children>
+                        <Label prefHeight="13.0" prefWidth="148.0" text="TOTAL TEST">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalTest1" alignment="CENTER" prefHeight="60.0" prefWidth="175.0" text="24" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="39.0" layoutY="52.0" prefHeight="218.0" prefWidth="322.0" AnchorPane.leftAnchor="39.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="142.0" text="NIVEL#" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="122.0" text="NIVEL 1">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="39.0" prefWidth="122.0" text="NIVEL 2">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="39.0" prefWidth="122.0" text="NIVEL 3">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="39.0" prefWidth="122.0" text="NIVEL 4">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="157.0" prefHeight="39.0" prefWidth="122.0" text="NIVEL 5">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="156.0" text="GANADO" textFill="#3cbf00" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaGanadoNivel1" alignment="CENTER" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaGanadoNivel2" alignment="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaGanadoNivel3" alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaGanadoNivel4" alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaGanadoNivel5" alignment="CENTER" layoutX="10.0" layoutY="157.0" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="160.0" text="PERDIDO" textFill="#f40404" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaPerdidoNivel1" alignment="CENTER" prefHeight="39.0" prefWidth="168.0" text="1" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaPerdidoNivel2" alignment="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="39.0" prefWidth="168.0" text="1" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaPerdidoNivel3" alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="39.0" prefWidth="168.0" text="1" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaPerdidoNivel4" alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="39.0" prefWidth="168.0" text="1" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="respuestaPerdidoNivel5" alignment="CENTER" layoutX="10.0" layoutY="157.0" prefHeight="39.0" prefWidth="168.0" text="1" textFill="#f40404">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="LISTADO USUARIOS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="398.0">
+               <children>
+                  <ImageView fitHeight="497.0" fitWidth="472.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icono.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="104.0" layoutY="-3.0" text="LISTADO DE USUARIOS">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextFlow layoutX="212.0" layoutY="270.0" prefHeight="166.0" prefWidth="228.0" style="-fx-border-color: #F5FD00; -fx-border-width: 5;">
+                     <children>
+                        <VBox prefHeight="158.0" prefWidth="202.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reporte Usuarios" wrappingWidth="201.7392578125">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El Reporte nos muestra La cantidad de usuarios que han realizado el Test ordenados por los puntos" textAlignment="CENTER" wrappingWidth="202.12109375">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </TextFlow>
+                  <VBox layoutX="14.0" layoutY="349.0" prefHeight="88.0" prefWidth="187.0">
+                     <children>
+                        <Label prefHeight="33.0" prefWidth="209.0" text="TOTAL USUARIOS">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalUsuarios" alignment="CENTER" prefHeight="58.0" prefWidth="199.0" text="24" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tablaUsuarios" focusTraversable="false" layoutX="127.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="columnaUsername" prefWidth="143.0" text="USERNAME" />
+                      <TableColumn fx:id="columnaPuntos" minWidth="7.0" prefWidth="56.0" text="PUNTOS" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="ENCUESTAS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="398.0">
+               <children>
+                  <ImageView fitHeight="497.0" fitWidth="472.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icono.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="52.0" text="PROMEDIO GLOBAL DEL NIVEL">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextFlow layoutX="213.0" layoutY="299.0" prefHeight="166.0" prefWidth="228.0" style="-fx-border-color: #F5FD00; -fx-border-width: 5;">
+                     <children>
+                        <VBox prefHeight="158.0" prefWidth="202.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reporte Respuestas" wrappingWidth="201.7392578125">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="El Reporte nos muestra La cantidad de Preguntas contestadas correctamente y incorrectamente por cada nivel" textAlignment="CENTER" wrappingWidth="204.12109375">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="3.0" />
+                     </padding>
+                  </TextFlow>
+                  <VBox layoutX="14.0" layoutY="349.0" prefHeight="88.0" prefWidth="194.0">
+                     <children>
+                        <Label prefHeight="38.0" prefWidth="202.0" text="TOTAL ENCUESTAS">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalEncuestas" alignment="CENTER" prefHeight="60.0" prefWidth="175.0" text="24" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="84.0" layoutY="47.0" prefHeight="136.0" prefWidth="288.0" AnchorPane.leftAnchor="84.0">
+                     <children>
+                        <VBox prefHeight="168.0" prefWidth="178.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="196.0" text="NIVEL#" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" onMouseEntered="#pisoPregunta1" onMouseExited="#salioPregunta1" prefHeight="39.0" prefWidth="189.0" text="PREGUNTA 1">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="40.0" onMouseEntered="#pisoPregunta2" onMouseExited="#salioPregunta2" prefHeight="39.0" prefWidth="216.0" text="PREGUNTA 2">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="79.0" onMouseEntered="#pisoPregunta3" onMouseExited="#salioPregunta3" prefHeight="39.0" prefWidth="209.0" text="PREGUNTA 3">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="147.0" prefWidth="116.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="116.0" text="PROMEDIO" textFill="#3cbf00" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="encuestaPregunta1" alignment="CENTER" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="encuestaPregunta2" alignment="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="encuestaPregunta3" alignment="CENTER" layoutX="10.0" layoutY="79.0" prefHeight="39.0" prefWidth="151.0" text="1" textAlignment="CENTER" textFill="#3cbf00">
+                                 <font>
+                                    <Font name="System Bold" size="27.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="contenedorPregunta" disable="true" editable="false" layoutX="45.0" layoutY="210.0" prefHeight="61.0" prefWidth="352.0" style="-fx-border-color: #F5FD00; -fx-border-width: 5;" text="¿Cual es la calificacion General del Juego?" visible="false" wrapText="true">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

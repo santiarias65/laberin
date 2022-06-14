@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="396.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controles.EncuestaController">
+   <children>
+      <ImageView fitHeight="412.0" fitWidth="457.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icono.PNG" />
+         </image>
+      </ImageView>
+      <HBox fx:id="estrellas" disable="true" layoutX="3.0" layoutY="156.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imgEstrellaUno" fitHeight="79.0" fitWidth="81.0" onMouseClicked="#unaEstrella" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/estrella.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEstrellaDos" fitHeight="79.0" fitWidth="81.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#dosEstrella" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/estrella.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEstrellaTres" fitHeight="79.0" fitWidth="81.0" layoutX="91.0" layoutY="10.0" onMouseClicked="#tresEstrella" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/estrella.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEstrellaCuatro" fitHeight="79.0" fitWidth="81.0" layoutX="172.0" layoutY="10.0" onMouseClicked="#cuatroEstrella" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/estrella.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgEstrellaCinco" fitHeight="79.0" fitWidth="81.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#cincoEstrella" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/estrella.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Button fx:id="botonCalificar" disable="true" layoutX="165.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#calificar" prefHeight="40.0" prefWidth="102.0" style="-fx-background-color: #F5FD00; -fx-background-radius: 10;" text="Calificar" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextFlow layoutY="14.0" prefHeight="73.0" prefWidth="411.0" textAlignment="CENTER">
+         <children>
+            <Text fx:id="pregunta" strokeType="OUTSIDE" strokeWidth="0.0" text="Hola para conocer la opinion de nuestros usuarios, Puedes contestar Esta Encuesta Por Favor, Contestala de 0 a 5 Estrellas " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Button fx:id="botonEncuesta" layoutX="140.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#iniciarEncuesta" prefHeight="40.0" prefWidth="152.0" style="-fx-background-color: #F5FD00; -fx-background-radius: 10;" text="Iniciar Encuesta">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
